@@ -1,5 +1,13 @@
-import { defineConfig } from 'vite'
-
-export default defineConfig({
-  esbuild: { jsx: 'automatic' }
-})
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true
+  },
+  "include": ["vite.config.ts"]
+}
