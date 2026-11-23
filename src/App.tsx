@@ -1,5 +1,5 @@
 import { useState, type CSSProperties, type FormEvent } from 'react'
-import { ArrowRight, CalendarDays, Clock3, Flame, Instagram, Menu, ShoppingBag, Users, X } from 'lucide-react'
+import { ArrowRight, CalendarDays, Camera, Clock3, Flame, Menu, ShoppingBag, Users, X } from 'lucide-react'
 
 const menuItems = [
   { name: 'Fire-Grilled Ribs', category: 'Chef’s choice', price: '$24', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85' },
@@ -48,7 +48,7 @@ export default function App() {
 
       <section className="reserve" id="reserve"><div><div className="section-label">Your table is waiting</div><h2>LET’S TURN UP<br/>THE HEAT.</h2></div><form onSubmit={handleReservation}><label><span>Date</span><input type="date" aria-label="Reservation date" required/></label><label><span>Guests</span><select aria-label="Number of guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label><button type="submit" className="primary-button">Find a table <ArrowRight size={18}/></button>{reservationMessage && <p role="status">{reservationMessage}</p>}</form></section>
 
-      <footer id="contact"><a className="brand footer-brand" href="#top"><span className="brand-mark"><Flame size={20} fill="currentColor"/></span><b>SPICY</b><em>GRILLS</em></a><div><strong>Visit</strong><p>184 Ember Avenue<br/>Downtown District</p></div><div><strong>Contact</strong><p>hello@spicygrills.com<br/>+1 555 014 0188</p></div><a className="social" href="https://instagram.com" aria-label="Instagram"><Instagram/></a><p className="copyright">© 2026 Spicy Grills</p></footer>
+      <footer id="contact"><a className="brand footer-brand" href="#top"><span className="brand-mark"><Flame size={20} fill="currentColor"/></span><b>SPICY</b><em>GRILLS</em></a><div><strong>Visit</strong><p>184 Ember Avenue<br/>Downtown District</p></div><div><strong>Contact</strong><p>hello@spicygrills.com<br/>+1 555 014 0188</p></div><a className="social" href="https://instagram.com" aria-label="Instagram"><Camera/></a><p className="copyright">© 2026 Spicy Grills</p></footer>
     </main>
   )
 }
